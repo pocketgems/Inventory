@@ -11,11 +11,11 @@ class Inventory {
 
   public void getitem(Item i, int quantity) {
     for(int x = 0; x < quantity; ++x) {
-      items.Add(i);
+      items.add(i);
       if (i.IsQuestItem()) {
-        questItems.Add(i);
+        questItems.add(i);
       } else {
-        normalItems.Add(i);
+        normalItems.add(i);
       }
     }
 
@@ -25,11 +25,11 @@ class Inventory {
 
   public void loseitem(Item i, int quantity) {
     for(int x = 0; x < quantity; ++x) {
-      items.Remove(i);
+      items.remove(i);
       if (i.IsQuestItem()) {
-        questItems.Remove(i);
+        questItems.remove(i);
       } else {
-        normalItems.Remove(i);
+        normalItems.remove(i);
       }
     }
 
